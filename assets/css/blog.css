@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Children laid out in a row */
+    height: 100vh;
+}
+.sidebar, .form-container {
+    flex: 1; /* Both take up equal amount of space */
+    box-sizing: border-box; /* Padding and border included in the width */
+}
+
+header {
+    /* ... other styles ... */
+    width: 100%; /* Full width of the container */
+}
+ 
+ .line {
+    background-color: #000; /* Color of the line */
+    height: 2px; /* Thickness of the line */
+    width: 100%; /* Full width of the container */
+    margin-top: 10px; /* Adjust space between the header and the line */
+}
+.line.vertical {
+    /* ... other styles ... */
+    height: 100%; /* Adjust this if necessary */
+}
+
+.sidebar {
+    width: 250px; /* Adjust this as necessary to match your design */
+    flex-shrink: 0;
+    position: relative; /* This is necessary for absolute positioning */
+    height: 100vh; /* Make the sidebar full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+
+.sidebar .circle {
+    /* Style your circle as needed, this is an example */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FFA500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 20px auto; /* Center the circle in the sidebar */
+}
+
+.sidebar .line.vertical {
+    background-color: #000; /* Color of the line */
+    width: 2px; /* Thickness of the line */
+    height: 100%; /* Full height of the sidebar */
+    position: absolute; /* Position it to the right of the sidebar */
+    right: 0; /* Align to the right side */
+    top: 0; /* Align to the top */
+}
+
+/* Make sure your sidebar is positioned relative so that the absolute positioning of the .vertical line works correctly */
+
+
+.form-container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start; /* Center align the form-container's children */
+    justify-content: flex-start; /* Center vertically */
+    padding: 20px; /* Add padding as necessary */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add space between form elements */
+    width: 100%; /* Full width of form-container */
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea,
+.form-group button {
+    display: block; /* Make these elements block-level */
+    width: 100%; /* Adjust the width as necessary */
+   
+
+}
+
+
+.form-group input,
+.form-group textarea {
+    margin-top: 10px; /* Add a little space below the label */
+}
