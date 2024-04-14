@@ -1,44 +1,51 @@
+
 .container {
     display: flex;
-    flex-direction: row; /* Children laid out in a row */
+    flex-direction: row;
     height: 100vh;
+    justify-content: space-between;     /*spacing between child elements */
+    align-items: flex-start;
+
+ 
 }
+
 .sidebar, .form-container {
-    flex: 1; /* Both take up equal amount of space */
-    box-sizing: border-box; /* Padding and border included in the width */
+    flex: none;  
+    margin: auto 
 }
 
 header {
-    /* ... other styles ... */
-    width: 100%; /* Full width of the container */
+    width: 100%;   /* Full width of the container */
+   
 }
  
  .line {
-    background-color: #000; /* Color of the line */
-    height: 2px; /* Thickness of the line */
-    width: 100%; /* Full width of the container */
-    margin-top: 10px; /* Adjust space between the header and the line */
+    position: absolute;
+    background-color: #000;  /* Color of the line */
+    height: 2px;   /* Thickness of the line */
+    width: 100%;    /* Full width of the container */
+   margin-top: 20px;
 }
+
 .line.vertical {
-    /* ... other styles ... */
-    height: 100%; /* Adjust this if necessary */
+    background-color: #000;     /* Color of the line */
+    width: 2px;     /* Thickness of the line */
+    height: 80vh; 
+    align-self: center;
+    left: calc(200px + 65px); /* Sidebar width plus desired space */
 }
+
 
 .sidebar {
-    width: 250px; /* Adjust this as necessary to match your design */
-    flex-shrink: 0;
-    position: relative; /* This is necessary for absolute positioning */
-    height: 100vh; /* Make the sidebar full height of the viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers items vertically */
-    align-items: center; /* Centers items horizontally */
+    position: absolute;     /* Allows you to place the sidebar anywhere within the container */
+    left: 50px;    
+    top: 50%; 
+    transform: translateY(-50%);   /*Center the sidebar vertically */
+    width: 200px;   /*Set a fixed width for the sidebar */
 }
 
-
-.sidebar .circle {
-    /* Style your circle as needed, this is an example */
-    width: 200px;
+ .circle {
+    width: 100%;;
     height: 200px;
     border-radius: 50%;
     background-color: #FFA500;
@@ -47,47 +54,33 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    margin: 20px auto; /* Center the circle in the sidebar */
-}
-
-.sidebar .line.vertical {
-    background-color: #000; /* Color of the line */
-    width: 2px; /* Thickness of the line */
-    height: 100%; /* Full height of the sidebar */
-    position: absolute; /* Position it to the right of the sidebar */
-    right: 0; /* Align to the right side */
-    top: 0; /* Align to the top */
-}
-
-/* Make sure your sidebar is positioned relative so that the absolute positioning of the .vertical line works correctly */
+  }
 
 
 .form-container{
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    align-items: flex-start; /* Center align the form-container's children */
-    justify-content: flex-start; /* Center vertically */
-    padding: 20px; /* Add padding as necessary */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-right: 260px;
 }
 
 .form-group {
-    margin-bottom: 20px; /* Add space between form elements */
-    width: 100%; /* Full width of form-container */
+    margin-bottom: 20px;    /* Adds space between form elements */
+    width: 100%;    /* Full width of form-container */
 }
 
 .form-group label,
 .form-group input,
 .form-group textarea,
 .form-group button {
-    display: block; /* Make these elements block-level */
-    width: 100%; /* Adjust the width as necessary */
+    display: block;  /* Make these elements block-level */
+    width: 100%; 
    
-
 }
-
 
 .form-group input,
 .form-group textarea {
-    margin-top: 10px; /* Add a little space below the label */
+    margin-top: 10px ; /* Add a little space below the label */
 }
