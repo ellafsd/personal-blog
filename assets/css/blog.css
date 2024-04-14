@@ -18,7 +18,7 @@ header {
 }
 
 .toggle {
-     margin-left: auto; /* This will push the Toggle to the right */
+     margin-right: auto; 
 }
 
  .line {
@@ -87,7 +87,8 @@ header {
     margin-top: 10px ; /* Add a little space below the label */
 }
 
-/* This targets the submit button specifically */
+
+/* submit button */
 #form button[type="submit"] {
     background-color: black; /* Set the background color to black */
     color: white;            /* Set the text color to white */
@@ -97,7 +98,7 @@ header {
     cursor: pointer;         /* Change the cursor to indicate the button is clickable */
 }
 
-/* Optional: add a hover effect for the button */
+
 #form button[type="submit"]:hover {
     background-color: #333; /* Darken the button background color on hover */
 }
