@@ -5,8 +5,6 @@
     height: 100vh;
     justify-content: space-between;     /*spacing between child elements */
     align-items: flex-start;
-
- 
 }
 
 .sidebar, .form-container {
@@ -15,10 +13,14 @@
 }
 
 header {
+    display: flex; /* Establishes flex container */
     width: 100%;   /* Full width of the container */
-   
 }
- 
+
+.toggle {
+     margin-left: auto; /* This will push the Toggle to the right */
+}
+
  .line {
     position: absolute;
     background-color: #000;  /* Color of the line */
@@ -83,4 +85,19 @@ header {
 .form-group input,
 .form-group textarea {
     margin-top: 10px ; /* Add a little space below the label */
+}
+
+/* This targets the submit button specifically */
+#form button[type="submit"] {
+    background-color: black; /* Set the background color to black */
+    color: white;            /* Set the text color to white */
+    padding: 10px 20px;      /* Add some padding to make the button taller and wider */
+    border: none;            /* Remove the default border */
+    width: 100%;             /* Make the button fill the container */
+    cursor: pointer;         /* Change the cursor to indicate the button is clickable */
+}
+
+/* Optional: add a hover effect for the button */
+#form button[type="submit"]:hover {
+    background-color: #333; /* Darken the button background color on hover */
 }
