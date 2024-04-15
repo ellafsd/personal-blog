@@ -53,6 +53,23 @@ input:checked + label + .background{
 }
 
 
+
+.back-container {
+    text-align: right; /* Aligns the content to the right */
+    width: 100%; /* Sets the width of the container to full width of its parent */
+    padding-right: 20px; /* Adds padding to the right */
+}
+
+/* Optional: Style the link itself if needed */
+.back-link {
+    text-decoration: underline;
+    display: inline-block; /* Makes the link inline-block so it can have padding and margins */
+    margin-top: 20px; 
+    color: #000; /* Set the color of the link text */
+}
+
+
+
 .post {
     border: 1px solid #000;  /* Add a border around each post */
     margin-bottom: 20px;    /* Add some space between posts */
