@@ -54,23 +54,49 @@ input:checked + label + .background{
 
 
 .post {
-    border: 1px solid #000; /* Add a border around each post */
-    margin-bottom: 20px; /* Add some space between posts */
+    border: 1px solid #000;  /* Add a border around each post */
+    margin-bottom: 20px;    /* Add some space between posts */
     margin-top: 20px;
-    padding: 15px; /* Add some space inside the border */
+    padding: 15px;  /* Add some space inside the border */
 }
 
 .post-title {
-    margin: 0 0 10px; /* Remove default margin and add space below the title */
-    padding-bottom: 5px; /* Add a little padding below the title */
-    border-bottom: 1px solid #000; /* Add a line below the title */
+    margin: 0 0 10px;   /* Remove default margin and add space below the title */
+    padding-bottom: 5px;    /* Add a little padding below the title */
+    border-bottom: 1px solid #000;  /* Add a line below the title */
 }
 
 .post-content {
-    margin: 0 0 10px; /* Remove default margin and add space below the content */
+    margin: 0 0 10px;   /* Remove default margin and add space below the content */
 }
 
 .post-author {
-    margin: 0; /* Remove default margin */
-    font-style: italic; /* Style for the author's name */
+    margin: 0;  
+    font-style: italic;     
+}
+
+
+footer {
+    display: flex;  /* Enables flexbox */
+    flex-direction: column; /* Stack children vertically */
+    background-color: #f1f1f1; 
+    padding: 20px;    /* Padding on top and bottom */
+    border-top: 1px solid #e1e1e1;  /* Border at the top of the footer */
+}
+
+.footer-left p {
+    margin: 5px 0; /* Margin above and below each paragraph */
+}
+
+.footer-heart {
+    text-align: center;
+}
+.heart {
+    color: red; /* This will make only the heart red */
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        font-size: 0.8em; /* Smaller font size on small screens */
+    }
 }
