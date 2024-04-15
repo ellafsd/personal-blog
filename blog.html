@@ -3,45 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Page</title>
-<link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/form.css">
-<link rel="stylesheet" href="assets/css/blog.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <input type="checkbox" id="darkmode-toggle">     
-            <label for="darkmode-toggle"></label>
-            <div class="line"></div> <!-- Line under the navbar -->
-        </header>
-        <div class="sidebar">
-              <div class="circle">My First Blog</div>
-        </div>
-        <div class="line vertical"></div> 
-        <div class="form-container">
-            <h2>What's on your mind?</h2>
-            <form id="form">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required>
-                </div>
-                <div class="form-group">
-                    <label for="content">Content:</label>
-                    <textarea id="content" name="content" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="assets/js/logic.js"></script>
+    <header>
+        <input type="checkbox" id="darkmode-toggle">     
+        <label for="darkmode-toggle"></label>
+        <div class="background"></div>
+        <div class="line"></div> <!-- Line under the navbar -->
+    </header>
+    <div class="post">
+        <h2 class="post-title">HTML from Scratch</h2>
+        <p class="post-content">For Beginners</p>
+        <p class="post-author">Posted by: Ella</p>
+    </div>    
+    <div class="post">
+        <h2 class="post-title">CSS from Scratch</h2>
+        <p class="post-content">For Beginners</p>
+        <p class="post-author">Posted by: Ella</p>
+    </div> 
+    <div class="post">
+        <h2 class="post-title">JavaScript from Scratch</h2>
+        <p class="post-content">For Beginners</p>
+        <p class="post-author">Posted by: Ella</p>
+    </div> 
     <script src="assets/js/form.js"></script>
-    <script src="assets/js/blog.js"></script>
 </body>
 </html>
