@@ -9,10 +9,13 @@ Live at: https://ellafsd.github.io/personal-blog/
 
 ### Landing Page
 ![Landing Page](images/index_html_page.png)
-![Landing Page Alternate](images/index_html-2_page.png)
+
+![Landing Page](images/index_html-2_page.png)
+
 
 ### Blog Posts Page
 ![Blog Posts Page](images/blog_html_page.png)
+
 ![Blog Posts Page Alternate](images/blog_html_page-2.png)
 
 ### Dark Mode
