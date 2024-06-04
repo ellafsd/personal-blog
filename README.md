@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-GitHub:  https://github.com/ellafsd/My-First-Blog
-Live:    https://ellafsd.github.io/My-First-Blog/
-=======
+
 # personal-blog
 This repository contains the Web APIs Challenge: Personal Blog, a two-page web application where you can input and view your blog posts. It features a form for creating posts, dynamic blog rendering, and a light/dark mode toggle, offering practical JavaScript experience and DOM manipulation with localStorage
 
 #Live at: https://ellafsd.github.io/personal-blog/
+
 
 ## Screenshots
 
@@ -19,4 +17,4 @@ This repository contains the Web APIs Challenge: Personal Blog, a two-page web a
 
 ### Dark Mode
 ![Dark Mode](assets/images/dark%20mode.png)
->>>>>>> 31524a74af4084dd335bdd487776ec50e68fd784
+
