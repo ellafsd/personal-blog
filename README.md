@@ -10,7 +10,7 @@ Live at: https://ellafsd.github.io/personal-blog/
 ### Landing Page
 ![Landing Page](images/index_html_page.png)
 
-![Landing Page Alternate](images/index_html-2_page.png)
+![Landing Page Alternate](images/index_html-2-page.png)
 
 
 ### Blog Posts Page
