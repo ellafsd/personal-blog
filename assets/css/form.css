@@ -1,119 +1,60 @@
-*Dark Mode/Light Mode Toggle*/
+/* form.css */
 
-
-#darkmode-toggle {
-    display: none;
+body {
+  font-family: Arial, sans-serif;
 }
+
+header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.form-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
 label {
-    width: 80px;
-    height: 50px;
-    position: relative;
-    display: block;
-    background: #ebebeb;
-    border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rga(0,0,0,0.4), inset 0px -5px 15px rgba(255 255 255 0.4);
-    cursor: pointer;
-    transition: 0.3s;
-   
-}
-label:after{
-    content: "";
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: linear-gradient(180deg, #ffcc89, #d8860b);
-    border-radius: 180px;
-    box-shadow: 0 15px 10px rgba(0,0,0,0.2);
-}
-input{
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-input:checked + label{
-    background-color: #242424;
-}
-input:checked + label:after{
-    left: 75px;     /*circle moves within the label */
-    transform: translateX(-100%);
-    background: linear-gradient(180deg, #777, #3a3a3a);
-}
-.background{
-    width: 250vw;
-    height: 250vh;
-    background: #fff;
-    z-index: -1;
-    position: absolute;
-    transition: 0.3s;
-}
-input:checked + label + .background{
-    background: #242424;
+  margin-bottom: 5px;
 }
 
-
-
-.back-container {
-    text-align: right; /* Aligns the content to the right */
-    width: 100%; /* Sets the width of the container to full width of its parent */
-    padding-right: 20px; /* Adds padding to the right */
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-/* Optional: Style the link itself if needed */
-.back-link {
-    text-decoration: underline;
-    display: inline-block; /* Makes the link inline-block so it can have padding and margins */
-    margin-top: 20px; 
-    color: #000; /* Set the color of the link text */
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-
-
-.post {
-    border: 1px solid #000;  /* Add a border around each post */
-    margin-bottom: 20px;    /* Add some space between posts */
-    margin-top: 20px;
-    padding: 15px;  /* Add some space inside the border */
-}
-
-.post-title {
-    margin: 0 0 10px;   /* Remove default margin and add space below the title */
-    padding-bottom: 5px;    /* Add a little padding below the title */
-    border-bottom: 1px solid #000;  /* Add a line below the title */
-}
-
-.post-content {
-    margin: 0 0 10px;   /* Remove default margin and add space below the content */
-}
-
-.post-author {
-    margin: 0;  
-    font-style: italic;     
-}
-
-
-footer {
-    display: flex;  /* Enables flexbox */
-    flex-direction: column; /* Stack children vertically */
-    background-color: #f1f1f1; 
-    padding: 20px;    /* Padding on top and bottom */
-    border-top: 1px solid #e1e1e1;  /* Border at the top of the footer */
-}
-
-.footer-left p {
-    margin: 5px 0; /* Margin above and below each paragraph */
-}
-
-.footer-heart {
-    text-align: center;
-}
-.heart {
-    color: red; /* This will make only the heart red */
-}
-
-@media (max-width: 600px) {
-    .footer-content {
-        font-size: 0.8em; /* Smaller font size on small screens */
-    }
+button:hover {
+  background-color: #0056b3;
 }

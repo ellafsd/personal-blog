@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Blog - Posts</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
 </head>
-
 <body>
-    <header>
-        <input type="checkbox" id="darkmode-toggle">     
-        <label for="darkmode-toggle"></label>
-        <div class="background"></div>
-        <div class="line"></div> <!-- Line under the navbar -->
-    </header>
-    <div class="back-container">
-        <a href="index.html" class="back-link">Back</a>
+  <header>
+    <div class="navbar">
+      <h1>My First Blog</h1>
+      <div class="header-buttons">
+        <button id="toggleMode">Toggle Light/Dark Mode</button>
+        <button id="backButton">Back</button>
+      </div>
     </div>
-    <div class="post">
-        <h2 class="post-title">HTML from Scratch</h2>
-        <p class="post-content">For Beginners</p>
-        <p class="post-author">Posted by: Ella</p>
-    </div>    
-    <div class="post">
-        <h2 class="post-title">CSS from Scratch</h2>
-        <p class="post-content">For Beginners</p>
-        <p class="post-author">Posted by: Ella</p>
-    </div> 
-    <div class="post">
-        <h2 class="post-title">JavaScript from Scratch</h2>
-        <p class="post-content">For Beginners</p>
-        <p class="post-author">Posted by: Ella</p>
-    </div> 
-    
-    <footer>
-        <div class="footer-content">
-          <div class="footer-left"></div>
-              <p>Portfolio: Ella Girin</p>
-              <p>Blog: Full-Stack Blog</p>
-              <p>Email: ella@email.com</p>
-          </div>
-          <div class="footer-center"></div>
-          <p class="footer-heart">Made with <span class="heart">❤</span> by Ella</p>
-    </footer>
-
-    <script src="assets/js/form.js"></script>
+  </header>
+  <main id="postsContainer">
+    <!-- Blog posts will be dynamically inserted here -->
+  </main>
+  <footer>
+    <p>Developed by <a href="https://your-portfolio-link.com">Ella Girin</a></p>
+    <div class="footer-details">
+      <p> <a href="https://github.com/ellafsd">GitHub</a></p>
+      <p> <a href="https://www.linkedin.com/in/ella-girin-8234a0274/">LinkedIn</a></p>
+    </div>
+  </footer>
+  <script src="assets/js/blog.js"></script>
+  <script src="assets/js/logic.js"></script>
 </body>
 </html>
